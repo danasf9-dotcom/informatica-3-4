@@ -13,7 +13,13 @@ int main(void) {
 
     if (user_response == 1){
         c_to_f();
-        
+      else if (user_response == 2) {}
+        f_to_c();
+        else {
+    printf("Invalid option\n");
+      }
+      }
+
     }
 }
 int main(void) {
