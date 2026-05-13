@@ -11,7 +11,7 @@ int main(void)
 {
 char ch;
     printf("Equation:\n");
-    scanf("%f%c%f", &N1, &ch,&N2);
+    scanf("%f%c%f", &N1, &ch, &N2);
 
     if (ch == ´+´){
         add();
@@ -20,5 +20,57 @@ char ch;
     else if (ch == ´-´){
         less();
     }
-    else if (ch ==)
+    else if (ch == ´*´){
+        mult();
+    }
+    else if (ch ==´/´){
+        divd();
+    }
+    else{
+        printf("Check spellin brothie\n");
+
+}
+void add(void){
+
+//float N1;
+//float N2;
+  // printf("Equation:\n");
+    //scanf("%f+%f",&N1 , &N2);
+    float ans = N1 + N2;
+    printf("%.2f\n",ans);
+}
+void less(void){
+
+//float N1;
+//float N2;
+
+    //printf("Equation:\n");
+     //scanf("%f-%f",&N1 ,&N2);
+     float ans = N1 - N2;
+     printf("%2.f\n",ans);
+}
+void mult(void){
+
+//float N1;
+//float N2;
+
+   //prinf("Equation:\n");
+   //scanf("%f*%f", &N1, &N2);
+     float ans = N1* N2;
+     printf("%.2f\n",ans);
+}
+void divd(void){
+
+//float N1;
+//float N2;
+
+ // printf("Equation:\n");
+   //scanf("%f/%f", &N1 , &N2);
+     float ans = N1 / N2;
+             if (N2 == 0){
+                printf(" no can do brothie\n");
+             }
+             else{
+        printf("%.2f\n",ans);
+             }
 }
